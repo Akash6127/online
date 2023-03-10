@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+</head>
+<style>
+    body{
+        background-color:antiquewhite;
+    }
+    h3{
+        text-align: center;
+    }
+    div.nav{
+        border: 1px solid black;
+        margin: 16px;
+        display: flex;
+        background-color: yellow;
+        display: flex;
+        
+    }
+    div.left{
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    div.right{
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+    div.submit{
+        float: none;
+    }
+    marquee{
+        border: 1px solid black;
+        background-color: green;
+        font: white;
+        position: relative;
+        padding: 2px;
+
+    }
+    marquee:hover{
+        color: white;
+    }
+    .print{
+        float: right;
+    }
+</style>
+<body>
+    <header>
+        <div class="nav">
+        <i>We create a very fast and healthy food delivery website.If you face any problem then contact this email or phone :-<strong> <a href="emailto:someone@example.com">akashshaikh1712@gmail.com</a>/ <Phone>7047556538</Phone></strong> </i>
+        </div>
+    </header>
+    <button class="print" type="button" onclick="window.print()">Print the Help Form</button>
+   
+    <h3>Help Form</h3>
+    <form action="/action_page.php">
+        <div class="left">
+            Enter your First Name : <input type="text">
+            Enter your Middle Name : <input type="text">
+            Enter your last Name : <input type="text"><br><br>
+            Enter Your address: <textarea name="location" id="" cols="30" rows="1"></textarea><br>
+            Enter your Phone number : <input type="number">
+        </div>
+        <div class="right">
+            Enter your item name : <input type="text">
+            Enter item code : <input type="text">
+            Enter Your Problem : <textarea name="problem" id="issue" cols="30" rows="1"></textarea><br><br>
+            <div class="submit">
+                <input type="submit" onclick="msg()">
+             </div>
+        </div>
+   
+        <script>function msg(){
+            confirm("Are you sure? this is your all final details and problem.")
+        }</script>
+       
+    </form><br><br>
+    <footer><br>
+          <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate" direction="left"vspace="100">After submiting this help form you will get help under 3 hours</marquee>  
+    </footer>
+</body>
+</html>

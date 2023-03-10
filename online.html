@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2c68aa6354.js" crossorigin="anonymous"></script>
+    <title>resturant</title>
+</head>
+<style>
+    body{
+        background-image:;
+        opacity: ;
+    }
+    header{
+        text-align:center;
+        border: 2px solid black;
+        background:whitesmoke ;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        
+    }
+    nav{
+        width: 100%;
+        height: 40px;
+        border: 2px solid black;
+        background-color: bisque;
+        position: sticky;
+        top: 0px;
+    }
+    li{
+        display: inline-block;
+        margin: 6px 6px;
+    margin-bottom: 2px;
+        
+    }
+    li.left:hover{
+        background-color: rgb(7, 53, 7);
+        border: 1px solid black;
+
+    }
+    a:hover{
+        color:white;
+    }
+        
+    
+li.right{
+    float: right;
+    margin: 6px 6px;
+    margin-bottom: 2px;
+    border: 2px solid black;
+    border-radius:5px ;
+    padding: 4px;
+}
+#in{
+    background-color: green;
+}
+#in:hover{
+    background-color: aqua;
+}
+#out:hover{
+    background-color: rgb(152, 177, 14);
+}
+#out{
+    background-color: red;
+}
+
+    a{
+        text-decoration:none;
+    }
+    .content{
+        margin: 200px 200px;
+        align-items: center;
+        margin-left: 30%;
+        
+
+       
+    }
+    .content input{
+        width: 500px;
+        height: 30px;
+        border: 1px solid black;
+         border-radius:25px ;
+         background-color: rgba(236, 248, 241, 0.884);
+         color: aliceblue;
+    }
+    .content button{
+        border:1px solid black ;
+         border-radius:100%;
+         background-color:;
+         width: 40px;
+         height: 40px;
+        
+    }
+   .content img{
+        border:1px solid black ;
+         border-radius:100%;
+         background-color:;
+         width: 40px;
+         height: 40px;
+       
+    }
+    marquee.help{
+        border: 4px solid black;
+        background-color: green;
+        padding: 3px;
+        color: rgb(231, 152, 152);
+        animation: blinker 1.5s linear infinite;
+        font-family: sans-serif;
+
+    }
+    @keyframes blinker{
+        50%{
+            opacity: 1.5;
+        }
+    }
+    marquee.help:hover{
+        color: white;
+    }
+    select{
+        background-color:bisque ;
+        border: 1px solid black;
+        border: none;
+
+    }
+    select:hover{
+        background-color:;
+    }
+    select.border{
+        border: none;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .font{
+        position: sticky;
+        top: 0;
+    }
+    a.active{
+        background-color: green;
+        padding: 3px;
+        padding-bottom: 8px;
+    }
+        
+    
+</style>
+
+<body background="https://wallpapercave.com/wp/wp3495545.jpg">
+    <header>
+        <h1>WELCOME TO AKASH-SAGAR RESTURANT</h1>
+    </header>
+    <nav>
+        <div class="font">
+            <li class="left">  <a class="active" href="#"><i class="fa fa-home"></i>Home</a></li>
+            
+                <select name="food" id="">
+                  <a href=""><option value="" class="border">Choose Item</option> </a>    
+                <a href=""><option value="">Biryani</option></a>   
+                <a href=""><option value="">Burger</option></a>   
+                <a href=""><option value="">chaomin</option></a>   
+                <a href=""><option value="">Role</option></a>   
+                <a href=""><option value="">Cold drinks</option></a>   
+                <a href=""><option value="">Sweets</option></a>   
+                  
+                 
+                </select>
+            </li>
+            <li class="left"><a href="item.html"><i class="fa-solid fa-burger"></i> Item</a></li>
+            <li class="left"><a href=""><i class="fa-solid fa-car"></i>Track Item</a></li>
+            <li class="left"><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact Us </a></li>
+            <li class="right" id="out"><a href="">logout</a></li>
+            <li class="right" id="in"><a href="">login</a></li>
+           
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="       Search Resturant in your nearby location....." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div>
+           
+        </div>
+    </section><br>
+    <footer>
+        <div class="bottom">
+            <marquee class="help" onmouseover="this.stop()" onmouseout="this.start()" behavior="right" direction="left">This is a very first and good delivary website.You get your ordered item too first under 5 hours.Our phone number is 7047556538/8900086937;email id:akashshaikh1712@gamil.com</marquee>
+        </div>
+    </footer>
+   
+        
+</body>
+</html>

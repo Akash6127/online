@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        .dropdown{
+            display: inline-block;
+            position: relative;
+
+
+        }
+        .btn{
+            background-color:rgb(16, 21, 4) ;
+            padding: 4px;
+            border: none;
+            color: white
+            
+
+        }
+        .btncontant{
+            display: none ;
+            box-shadow: 0px 10px 10px 0px;
+            position: absolute;
+         
+        }
+       .btncontant a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 12px 16px;
+            background-color: black;
+
+        }
+        .btncontant a:hover{
+             background-color: brown;
+        }
+        .btn:hover{
+            background-color:rgb(108, 146, 18);
+        }
+        .dropdown:hover .btncontant{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="btn">name</button>
+        <div class="btncontant">
+            <a href="#">akash</a>
+            <a href="#">bipasha</a>
+            <a href="#">maya</a>
+           
+        </div>
+    </div>
+</body>
+</html>

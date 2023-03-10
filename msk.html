@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2c68aa6354.js" crossorigin="anonymous"></script>
+    <title>KRISHNACHANDRA PUR MSK SCHOOL</title>
+    <style>
+        .header {
+            background-color: rgb(37, 37, 176);
+            text-align: center;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .header img {
+            float: left;
+            width: 100px;
+            height: 70px;
+            padding-left: 4px;
+            padding-top: 2px;
+        }
+
+        .header h2 {
+            color: white;
+            display:inline-flex;
+            max-width: 100;
+            
+            
+        }
+
+        .header button {
+            float: right;
+            width: 100px;
+            height: 70px;
+            padding: 10px;
+        }
+
+        .header button:hover {
+            background-color: green;
+            color: white;
+        }
+
+
+    
+        .nav .icon{
+            float: right;
+            display: none;
+        }
+       
+            @media only screen and(max-width:800px){
+            .nav .responsive {
+                 position: relative;
+            }
+            .nav.responsive.icon{
+                position: absolute;
+                
+
+            }
+            .nav.responsive a{
+                float: none;
+                display: block;
+                text-align: left;   
+            }
+            .nav a {
+            float: left;
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-right: 3px rgb(19, 230, 202) solid;
+            display: none;
+
+        }
+        
+        .nav {
+            background-color: rgb(94, 120, 223);
+            position: -webkit-sticky;
+            position: sticky;
+            margin: auto;
+            top: 0px;
+            width: 100%;
+            display: none;
+            
+        }
+        a.active {
+            background-color: rgb(37, 37, 176);
+        }
+
+        .nav a:hover {
+            background-color: rgb(37, 37, 176);
+        }
+
+        } 
+            
+        
+        @media only screen and(max-width:500px) {
+            
+            
+        }
+
+     
+
+        .marquee {
+            background-color: rgb(14, 14, 75);
+            color: white;
+            padding: 4px;
+
+        }
+
+        .marquee a {
+            padding-bottom: 5px;
+            overflow: hidden;
+
+        }
+      
+
+        .mid {
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .left {
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0, 0.8);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            top: 0px;
+            right: 20px;
+        }
+
+        .left a {
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        .left a:hover{
+            text-decoration:underline;
+            color: red;
+        }
+        ul.s{
+            list-style-type:circle ;
+        }
+       
+
+        
+    </style>
+</head>
+
+<body>
+   
+    <div class="header">
+        <img src="https://thumbs.dreamstime.com/z/education-badge-logo-design-university-high-school-emblem-education-badge-logo-design-university-high-school-emblem-151924849.jpg"
+            alt="logo">
+        <button>Student login </button>
+        <h2>PANDIT PUR KRISHNACHANDRA PUR MSK SCHOOL</h2>
+        
+
+    </div>
+   
+    <div class="nav" id="mytopnav">
+        <i><a class="active" href="#"><i class="fa fa-home"></i> Home</a></i>
+        <i><a href="#">Admission</a></i>
+        <i><a href="#">Syallabus and Routine</a></i>
+        <i><a href="#">Examination</a></i>
+        <i><a href="#">Results</a></i>
+        <i><a href="#">Sports</a></i>
+        <i><a href="#">Meal</a></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    <div class="marquee">
+        <marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" direction="left">........"The
+            New Admission is now available for class Five to Eight in the Session of 2022-2023 ."........</marquee>
+    </div>
+
+    <div class="mid">
+        <img src="school.jpg" alt="school" width="100%">
+        <div class="left">
+            <h4>News and Information</h4>
+            <marquee height="250px" vspace="2" behavior="alternate" scrollamount="2%" onmouseover="this.stop()" onmouseout="this.start()" direction="up">
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+               <ul class="s"><li><a href="#">there is no Information</a></li></ul>
+              
+            
+
+
+            </marquee>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("mytopnav");
+            if(x.className === "nav"){
+                x.className += "responsive";
+            }else{
+                x.className = "nav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
